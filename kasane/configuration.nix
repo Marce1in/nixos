@@ -21,9 +21,6 @@
 
   boot.loader.efi.efiSysMountPoint = "/boot";
 
-  networking.hostName = "kasane";
-  networking.networkmanager.enable = true;
-
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "C.UTF-8";
 
@@ -37,6 +34,9 @@
     home = "/home/pc";
     extraGroups = [ "wheel" "networkmanager" "docker" "video" ];
   };
+
+  networking.networkmanager.enable = true;
+  networking.hostName = "nixos";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -68,9 +68,6 @@
 
     firefox
     foot
-
-    gruvbox-gtk-theme
-    nwg-look
 
     grim
     slurp
