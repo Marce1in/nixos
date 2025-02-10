@@ -68,6 +68,7 @@
 
     firefox
     foot
+    foliate
 
     grim
     slurp
